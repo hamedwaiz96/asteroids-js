@@ -36,9 +36,9 @@ Game.prototype.draw = function draw(ctx){
 			this.allObjects()[i].draw(ctx);
 		}
 	}
-Game.prototype.moveObjects = function moveObjects(){
+Game.prototype.moveObjects = function moveObjects(delta){
 		for(let i = 0; i <= this.allObjects().length - 1; i++){
-			this.allObjects()[i].move();
+			this.allObjects()[i].move(delta);
 		}
 	}
 
